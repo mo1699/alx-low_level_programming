@@ -8,10 +8,6 @@
  */
 int main(void)
 {
-	char array[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-		int i;
-	for(i=0;array[i] != '\0';i++)
-		printf(array[i]);
-	printf('\n');
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
