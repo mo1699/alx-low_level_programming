@@ -10,7 +10,9 @@ int main(void)
 	char *array = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	int i;
 	for (i= 0; array[i] != '\0'; i++)
+	{
 	printf("%c", array[i]);
+	}
 	printf("\n");
 	return (1);
 }
