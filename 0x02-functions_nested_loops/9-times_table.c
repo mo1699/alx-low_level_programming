@@ -8,16 +8,20 @@ void times_table(void)
 {
   int i;
   int n;
-  for (i =0; i <= 9; i++)
-  {
-    for(n = 0; n <= 9; n++)
-    {
-      if (n != 9)
-       printf("%d, ",n*i); 
-      else if (n == 9)
-        printf("%d",n*i);
+  
+  for (i =0; i <= 9; i++){
+    for(n = 0; n <= 9; n++){
+      int k= n*i;
+      if (n == 0)
+        printf("%d",k);
+        
+     else if (n != 0 && k < 10){
+       printf(",  %d",k);
+    }
+      else if (n != 0 && k >= 10){
+          printf(", %d",k);
+      }
+      
     }
     
       printf("\n");
-}
-}
