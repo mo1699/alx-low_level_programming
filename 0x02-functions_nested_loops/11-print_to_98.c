@@ -8,7 +8,6 @@
  */
 void print_to_98(int n)
 {
-#include <stdio.h>
   int n;
 	
   if (n < 98)
