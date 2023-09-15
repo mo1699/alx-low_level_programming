@@ -14,10 +14,10 @@ char *_strcat(char *dest, char *src)
 	i = 0;
 	j = 0;
 
-	for (i = 0; src[i] != '0'; i++)
+	for (i = 0; src[i] != '\0'; i++)
 	       ;
-	for (j = 0; dest[j] != '0'; j++)
-		dest[i] = src [j];
+	for (j = 0; dest[j] != '\0'; j++)
+		dest[j+i] = src [i];
 
 	dest[i] = '\0';
 
