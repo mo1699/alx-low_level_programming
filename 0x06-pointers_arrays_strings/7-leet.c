@@ -9,13 +9,11 @@
 char *leet(char *s)
 {
 	int i, j;
-	char c[] = {'A', 'E', 'O', 'T', 'L', 'a', 'e', 'o', 't', 'l'};
-	char n[] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
+	char *a = "aAeEoOtTlL";
+	char *b = "4433007711";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == '\n')
-			continue;
 		for (j = 0; c[j] != '\0'; j++)
 			if (s[i] == c[j])
 				s[i] = n[j];
