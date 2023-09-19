@@ -21,7 +21,7 @@ char *cap_string(char *s)
 		}
 		for (j = 0; spe[j] != '\0' ; j++)
 		{
-		if (s[i] = spe[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
+			if (s[i] == spe[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
 			{
 			s[i + 1] = s[i + 1] - 32;
 		}
