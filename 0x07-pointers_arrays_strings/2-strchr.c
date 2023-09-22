@@ -18,8 +18,8 @@ char *_strchr(char *s, char c)
 			;
 		for (j = 0; j <= i + 1; j++)
 		{
-			if (s[i] == c)
-				return (&s[i]);
+			if (s[j] == c)
+				return (&s[j]);
 		}
 		return (NULL);
 }
