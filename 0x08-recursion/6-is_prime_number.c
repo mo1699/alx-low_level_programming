@@ -24,7 +24,7 @@ int is_prime_number(int n)
  */
 int actual_prime(int n, int i)
 {
-	else if (n % i == 0)
+	if (n % i == 0)
 		return (0);
 	if (i >= n)
 		return (1);
