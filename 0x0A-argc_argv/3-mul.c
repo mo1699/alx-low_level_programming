@@ -9,20 +9,19 @@
  * @argc : numbers of argues
  * Return: the int converted from the string
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
-	int a, b;
-
 	if (argc != 3)
 	{
 		printf("Error\n");
-			return (0);
+			return (1);
 	}
 	else
 	{
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
+		int a = atoi(argv[1]);
+		int b = atoi(argv[2]);
+
 		printf("%d\n", a * b);
-	return (0);
+		return (0);
 	}
 }
