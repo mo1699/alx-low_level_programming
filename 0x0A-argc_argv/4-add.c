@@ -22,9 +22,9 @@ int main(int argc, char *argv[])
 				return	(1);
 			}
 	}
-		for (k = 0; k < argc; k++)
+		for (k = 1; k < argc; k++)
 		{
-			num = atoi(argv[argc - 1]);
+			num = atoi(argv[k]);
 			if (num >= 0)
 				sum += num;
 		}
