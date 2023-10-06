@@ -5,7 +5,7 @@
 /**
  * main - multiplies two numbers.
  * atoi - converts a string to an integer
- * * @argv : arguments to be multiplyed
+ * @argv : arguments to be multiplyed
  * @argc : numbers of argues
  * Return: the int converted from the string
  */
