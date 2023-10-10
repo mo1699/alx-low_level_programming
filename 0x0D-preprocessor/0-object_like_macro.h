@@ -1,2 +1,2 @@
-#pragma once
+e
 #define SIZE 1024
