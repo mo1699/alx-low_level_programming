@@ -1,10 +1,9 @@
-#ifndef _ 0-OBJECT_LIKE_MACRO _
-#define _ 0-OBJECT_LIKE_MACRO _
-
+#ifndef OBJECT_LIKE_MACRO_H
+#define OBJECT_LIKE_MACRO_H
 #define SIZE (1024)
 
 
 
 
 
-#endif /*for ifndef*/f
+#endif
