@@ -7,9 +7,7 @@
  */
 void free_list(list_t *head)
 {
-	unsigned int i;
-
-	for (i = 0; head != NULL; i++)
+	while (head)
 	{
 		free(head->str);
 		free(head);
