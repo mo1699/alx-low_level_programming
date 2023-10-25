@@ -7,15 +7,17 @@
 
 int pop_listint(listint_t **head)
 {
-	/*listint_t *temp;*/
+	listint_t *temp;
 	int i;
 /*check for NULL entry */
 	if (!*head)
 		return (0);
 	/*assign the content &the next node address before deleting */
 	i = (*head)->n;
+	temp = (*head)->next;
 /*free the node */
 	free(*head);
+	*head = temp;
 /*reassign the header*/
 	return (i);
 }
