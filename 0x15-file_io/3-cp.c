@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 	error(from, 0, 0, 0, 0, 0, argv);
 	to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	error(0, to, 0, 0, 0, 0, argv);
-	while (r != 0 && r != -1)
+	while (r != 0)
 	{
 		r = read(from, buff, 1024);
 
